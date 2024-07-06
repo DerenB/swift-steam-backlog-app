@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1537EAB22C38D29600E68F53 /* AllGamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1537EAB12C38D29600E68F53 /* AllGamesVC.swift */; };
+		1537EAB42C38D2C600E68F53 /* BacklogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1537EAB32C38D2C600E68F53 /* BacklogVC.swift */; };
+		1537EAB62C38D2D500E68F53 /* InProgressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1537EAB52C38D2D500E68F53 /* InProgressVC.swift */; };
+		1537EAB82C38D2E100E68F53 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1537EAB72C38D2E100E68F53 /* SettingsVC.swift */; };
 		15763AF82C34D9C700F86CD6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15763AF72C34D9C700F86CD6 /* AppDelegate.swift */; };
 		15763AFA2C34D9C700F86CD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15763AF92C34D9C700F86CD6 /* SceneDelegate.swift */; };
 		15763AFC2C34D9C700F86CD6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15763AFB2C34D9C700F86CD6 /* ViewController.swift */; };
@@ -15,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1537EAB12C38D29600E68F53 /* AllGamesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllGamesVC.swift; sourceTree = "<group>"; };
+		1537EAB32C38D2C600E68F53 /* BacklogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacklogVC.swift; sourceTree = "<group>"; };
+		1537EAB52C38D2D500E68F53 /* InProgressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressVC.swift; sourceTree = "<group>"; };
+		1537EAB72C38D2E100E68F53 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		15763AF42C34D9C700F86CD6 /* steamBackLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = steamBackLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15763AF72C34D9C700F86CD6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15763AF92C34D9C700F86CD6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +43,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1537EAAF2C38D1F000E68F53 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				15763B002C34D9C800F86CD6 /* Assets.xcassets */,
+				15763AF72C34D9C700F86CD6 /* AppDelegate.swift */,
+				15763AF92C34D9C700F86CD6 /* SceneDelegate.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		1537EAB02C38D26600E68F53 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				1537EAB12C38D29600E68F53 /* AllGamesVC.swift */,
+				1537EAB32C38D2C600E68F53 /* BacklogVC.swift */,
+				1537EAB52C38D2D500E68F53 /* InProgressVC.swift */,
+				1537EAB72C38D2E100E68F53 /* SettingsVC.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
 		15763AEB2C34D9C700F86CD6 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +83,9 @@
 		15763AF62C34D9C700F86CD6 /* steamBackLog */ = {
 			isa = PBXGroup;
 			children = (
-				15763AF72C34D9C700F86CD6 /* AppDelegate.swift */,
-				15763AF92C34D9C700F86CD6 /* SceneDelegate.swift */,
+				1537EAB02C38D26600E68F53 /* Screens */,
+				1537EAAF2C38D1F000E68F53 /* Support */,
 				15763AFB2C34D9C700F86CD6 /* ViewController.swift */,
-				15763B002C34D9C800F86CD6 /* Assets.xcassets */,
 				15763B022C34D9C800F86CD6 /* LaunchScreen.storyboard */,
 				15763B052C34D9C800F86CD6 /* Info.plist */,
 			);
@@ -134,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1537EAB62C38D2D500E68F53 /* InProgressVC.swift in Sources */,
 				15763AFC2C34D9C700F86CD6 /* ViewController.swift in Sources */,
 				15763AF82C34D9C700F86CD6 /* AppDelegate.swift in Sources */,
+				1537EAB22C38D29600E68F53 /* AllGamesVC.swift in Sources */,
+				1537EAB42C38D2C600E68F53 /* BacklogVC.swift in Sources */,
 				15763AFA2C34D9C700F86CD6 /* SceneDelegate.swift in Sources */,
+				1537EAB82C38D2E100E68F53 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

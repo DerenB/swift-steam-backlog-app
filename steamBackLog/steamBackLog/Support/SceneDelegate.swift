@@ -22,9 +22,50 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         /// Set Root View Controller
-        window?.rootViewController
+        window?.rootViewController = createTabbar()
+        window?.makeKeyAndVisible()
+        
+        /// Configure Navigation Bar
+        configureNavigationBar()
     }
-
+    
+    
+    /// View Controller for AllGamesVC
+    func createAllGamesVC() -> UINavigationController {
+        /// Create Instance of VC
+        let allGamesVC = AllGamesVC()
+        
+        /// Set Title for VC
+        allGamesVC.title = "All Games"
+        
+        /// Set the Icon
+        /// Set the position (order) within the navbar
+        allGamesVC.tabBarItem = UITabBarItem(tabBarSystemItem: , tag: 0)
+        
+        
+        
+        
+        
+        /// Return the VC
+        return UINavigationController(rootViewController: allGamesVC)
+    }
+    
+    
+    /// Create the Tab Bar
+    func createTabbar() -> UITabBarController {
+        let tabBar = UITabBarController()
+        UITabBar.appearance().tintColor = .systemRed
+        tabBar.viewControllers = []
+        
+        return tabBar
+    }
+    
+    
+    /// Sets the Navigation Bar color across the whole app
+    func configureNavigationBar() {
+        UINavigationBar.appearance().tintColor = .systemRed
+    }
+    
     
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
