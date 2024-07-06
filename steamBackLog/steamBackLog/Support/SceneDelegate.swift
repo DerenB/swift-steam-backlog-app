@@ -35,19 +35,60 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         /// Create Instance of VC
         let allGamesVC = AllGamesVC()
         
+        /// Create the Image String
+        let iconImage = UIImage(systemName: "gamecontroller.fill")
+        
         /// Set Title for VC
         allGamesVC.title = "All Games"
         
         /// Set the Icon
         /// Set the position (order) within the navbar
-        allGamesVC.tabBarItem = UITabBarItem(tabBarSystemItem: , tag: 0)
-        
-        
-        
-        
+        allGamesVC.tabBarItem = UITabBarItem(title: "All Games", image: iconImage, tag: 0)
         
         /// Return the VC
         return UINavigationController(rootViewController: allGamesVC)
+    }
+    
+    
+    /// View Controller for BacklogVC
+    func createBacklogVC() -> UINavigationController {
+        let backlogVC = BacklogVC()
+        
+        let iconImage = UIImage(systemName: "list.clipboard.fill")
+        
+        backlogVC.title = "Backlog Titles"
+        
+        backlogVC.tabBarItem = UITabBarItem(title: "Backlog", image: iconImage, tag: 1)
+        
+        return UINavigationController(rootViewController: backlogVC)
+    }
+    
+    
+    /// View Controller for InProgressVC
+    func createInProgressVC() -> UINavigationController {
+        let inProgressVC = InProgressVC()
+        
+        let iconImage = UIImage(systemName: "figure.walk.circle.fill")
+        
+        inProgressVC.title = "Games in Progress"
+        
+        inProgressVC.tabBarItem = UITabBarItem(title: "In Progress", image: iconImage, tag: 2)
+        
+        return UINavigationController(rootViewController: inProgressVC)
+    }
+    
+    
+    /// View Controller for SettingsVC
+    func createSettingsVC() -> UINavigationController {
+        let settingsVC = SettingsVC()
+        
+        let iconImage = UIImage(systemName: "gear")
+        
+        settingsVC.title = "Settings"
+        
+        settingsVC.tabBarItem = UITabBarItem(title: "Settings", image: iconImage, tag: 2)
+        
+        return UINavigationController(rootViewController: settingsVC)
     }
     
     
@@ -55,7 +96,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     func createTabbar() -> UITabBarController {
         let tabBar = UITabBarController()
         UITabBar.appearance().tintColor = .systemRed
-        tabBar.viewControllers = []
+        tabBar.viewControllers = [createAllGamesVC(), createBacklogVC(), createInProgressVC(), createSettingsVC()]
         
         return tabBar
     }
