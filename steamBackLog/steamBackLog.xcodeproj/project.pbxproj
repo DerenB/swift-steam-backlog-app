@@ -83,6 +83,7 @@
 		15763AF62C34D9C700F86CD6 /* steamBackLog */ = {
 			isa = PBXGroup;
 			children = (
+				15A6C78C2C39D16000805A1A /* CustomComponents */,
 				1537EAB02C38D26600E68F53 /* Screens */,
 				1537EAAF2C38D1F000E68F53 /* Support */,
 				15763AFB2C34D9C700F86CD6 /* ViewController.swift */,
@@ -90,6 +91,13 @@
 				15763B052C34D9C800F86CD6 /* Info.plist */,
 			);
 			path = steamBackLog;
+			sourceTree = "<group>";
+		};
+		15A6C78C2C39D16000805A1A /* CustomComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,6 +323,7 @@
 				DEVELOPMENT_TEAM = 6PD6X5F55R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = steamBackLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Game Backlog";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -342,6 +351,7 @@
 				DEVELOPMENT_TEAM = 6PD6X5F55R;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = steamBackLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Game Backlog";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
